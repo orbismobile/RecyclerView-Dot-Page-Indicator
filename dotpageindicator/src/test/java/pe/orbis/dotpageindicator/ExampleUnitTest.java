@@ -1,4 +1,4 @@
-package io.tohure.dotpageindicator;
+package pe.orbis.dotpageindicator;
 
 import org.junit.Test;
 

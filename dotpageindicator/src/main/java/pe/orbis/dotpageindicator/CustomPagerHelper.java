@@ -1,4 +1,4 @@
-package io.tohure.dotpageindicator;
+package pe.orbis.dotpageindicator;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.PagerSnapHelper;

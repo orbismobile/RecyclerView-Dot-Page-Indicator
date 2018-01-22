@@ -1,4 +1,4 @@
-package io.tohure.dotpageindicator;
+package pe.orbis.dotpageindicator;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -15,6 +15,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import java.util.Arrays;
+
+import io.tohure.dotpageindicator.R;
 
 /**
  * Created by tohure on 19/01/18.
