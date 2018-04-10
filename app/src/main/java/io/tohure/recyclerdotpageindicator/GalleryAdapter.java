@@ -1,5 +1,6 @@
 package io.tohure.recyclerdotpageindicator;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryI
 
     private List<String> listImages;
 
-    public GalleryAdapter() {
+    GalleryAdapter() {
         this.listImages = new ArrayList<>();
     }
 
@@ -28,14 +29,15 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryI
         notifyDataSetChanged();
     }
 
+    @NonNull
     @Override
-    public GalleryItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public GalleryItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.example_item, parent, false);
         return new GalleryItemViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(GalleryItemViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull GalleryItemViewHolder holder, int position) {
         Picasso.with(holder.imgPage.getContext())
                 .load(listImages.get(position))
                 .fit().centerCrop()
